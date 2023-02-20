@@ -9,6 +9,9 @@ import com.sarac.bean_annotation.motherboardfactory.Motherboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Configuration
 public class ComputerConfig {
 
@@ -27,4 +30,5 @@ public class ComputerConfig {
     public Motherboard motherboardAssus() {
         return new AsusMotherboard("BJ-200", "Assus", 4, 6, "v2.44");
     }
+
 }
