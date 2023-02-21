@@ -2,6 +2,7 @@ package com.sarac.bean_annotation.config;
 
 import com.sarac.bean_annotation.caseFactory.Case;
 import com.sarac.bean_annotation.caseFactory.DellCase;
+import com.sarac.bean_annotation.monitorfactory.AcerMonitor;
 import com.sarac.bean_annotation.monitorfactory.Monitor;
 import com.sarac.bean_annotation.monitorfactory.SonyMonitor;
 import com.sarac.bean_annotation.motherboardfactory.AsusMotherboard;
@@ -15,6 +16,11 @@ public class ComputerConfig {
     @Bean
     public Monitor monitorSony() {
         return new SonyMonitor("25 inches Beast", "Sony", 25);  //Monitor abc=new SonyMonitor();
+    }
+
+    @Bean
+    public Monitor monitorAcer() {
+        return new AcerMonitor("23 inches Beast", "Acer", 23);  //Monitor abc=new SonyMonitor();
     }
 
     @Bean
