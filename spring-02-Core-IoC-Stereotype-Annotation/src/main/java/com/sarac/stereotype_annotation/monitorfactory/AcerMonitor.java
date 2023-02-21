@@ -1,4 +1,4 @@
-package com.sarac.monitorfactory;
+package com.sarac.stereotype_annotation.monitorfactory;
 
 import org.springframework.stereotype.Component;
 

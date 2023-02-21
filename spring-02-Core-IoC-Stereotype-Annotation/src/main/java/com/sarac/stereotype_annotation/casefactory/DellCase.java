@@ -1,4 +1,4 @@
-package com.sarac.casefactory;
+package com.sarac.stereotype_annotation.casefactory;
 
 import org.springframework.stereotype.Component;
 
@@ -8,6 +8,9 @@ public class DellCase extends Case {
 
     public DellCase(String model, String manufacturer, String powerSupply) {
         super(model, manufacturer, powerSupply);
+    }
+    public DellCase() {
+        super("2208","Dell","240");
     }
 
     public void pressPowerButton() {

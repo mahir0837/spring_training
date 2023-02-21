@@ -1,4 +1,4 @@
-package com.sarac.motherboardfactory;
+package com.sarac.stereotype_annotation.motherboardfactory;
 
 import org.springframework.stereotype.Component;
 
