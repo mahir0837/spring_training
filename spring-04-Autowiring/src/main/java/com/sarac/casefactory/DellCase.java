@@ -1,6 +1,7 @@
 package com.sarac.casefactory;
 
 import lombok.Getter;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 
@@ -11,9 +12,9 @@ public class DellCase extends Case {
         super(model, manufacturer, powerSupply);
     }
 
-//    public DellCase() {
-//        super("2208","Dell","240");
-//    }
+public DellCase() {
+    super("2208","Dell","240");
+}
 
     public void pressPowerButton() {
 
