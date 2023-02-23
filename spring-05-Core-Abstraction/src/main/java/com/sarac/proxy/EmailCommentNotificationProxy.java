@@ -1,10 +1,12 @@
 package com.sarac.proxy;
 
 import com.sarac.model.Comment;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EmailCommentNotificayionProxy implements CommentNotificationProxy{
+@Qualifier("EMAIL")
+public class EmailCommentNotificationProxy implements CommentNotificationProxy{
     @Override
     public void sendComment(Comment comment) {
 
