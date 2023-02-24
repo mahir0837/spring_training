@@ -18,6 +18,8 @@ public class saracApplication {
       ApplicationContext container= SpringApplication.run(saracApplication.class, args);
         CommentService commentService=container.getBean(CommentService.class);
         commentService.publishComment(comment);
+        commentService.prinConfigData();
+        commentService.printDBConfigData();
     }
 
 }
