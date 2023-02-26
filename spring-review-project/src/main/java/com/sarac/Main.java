@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         ApplicationContext context=new AnnotationConfigApplicationContext(EmployeeConfig.class);
-       SalaryService salaryService= context.getBean(SalaryService.class);
-       salaryService.calculateRegularSalary();
+        SalaryService salaryService= context.getBean(SalaryService.class);
+        salaryService.calculateRegularSalary();
     }
 }
