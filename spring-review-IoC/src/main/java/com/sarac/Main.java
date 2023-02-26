@@ -1,4 +1,4 @@
-package bean-practice;
+package com.sarac;
 
 public class Main {
     public static void main(String[] args) {
