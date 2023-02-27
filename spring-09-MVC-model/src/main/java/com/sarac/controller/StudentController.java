@@ -1,5 +1,6 @@
 package com.sarac.controller;
 
+import com.sarac.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,8 @@ public class StudentController {
         model.addAttribute("numbers",number);
         LocalDate ld=LocalDate.now();
         model.addAttribute(ld);
+        Student student=new Student(1,"Mike","Smitih");
+        model.addAttribute("Student",student);
         return "/student/welcome";
     }
 }
