@@ -25,7 +25,7 @@
 </h2>
 <!--Adding parameters in Link-->
 <h2>
-    <a th:href="@{/student/welcome(id=3)}">Link</a>
+    <a th:href="@{/student/welcome(name=${students.get(0).getFirstName()})}">Name</a>
 </h2>
 
 </body>

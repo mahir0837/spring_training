@@ -1,6 +1,7 @@
 package com.sarac.controller;
 
 import com.sarac.bootstrap.DataGenerator;
+import com.sarac.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,9 +19,10 @@ public class StudentController {
         return "/student/register";
     }
     @RequestMapping("/welcome")
-    public String welcome(@RequestParam int id){
+    public String welcome(@RequestParam String name){
 
-        System.out.println(id);
+        System.out.println(name);
         return "student/welcome";
     }
+
 }
