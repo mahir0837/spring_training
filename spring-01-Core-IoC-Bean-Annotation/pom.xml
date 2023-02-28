@@ -21,5 +21,10 @@
             <artifactId>lombok-utils</artifactId>
             <version>1.18.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>faker</artifactId>
+            <version>4.1.0</version>
+        </dependency>
     </dependencies>
 </project>
