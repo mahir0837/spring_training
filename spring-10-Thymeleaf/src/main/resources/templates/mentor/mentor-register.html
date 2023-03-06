@@ -27,6 +27,7 @@
     <label>Batch Number</label>
     <select th:field="*{batch}">
         <option th:each="theBatch : ${batchList}" th:value="${theBatch}" th:text="${theBatch}"></option>
+        <br>
 
     </select><br>
 
