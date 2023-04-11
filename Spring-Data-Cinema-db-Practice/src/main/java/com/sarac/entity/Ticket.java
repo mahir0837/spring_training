@@ -16,10 +16,8 @@ public class Ticket {
     private LocalDateTime dateTime;
     private Integer seatNumber;
     private Integer rowNumber;
-    @ManyToOne
-    @JoinColumn(name = "movieCinemaId")
+    @ManyToOne(fetch = FetchType.LAZY)
     private MovieCinema movieCinema;
-    @ManyToOne
-    @JoinColumn(name = "userAccountId")
-    private UserAccount userAccount;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private User userAccount;
 }

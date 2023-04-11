@@ -8,12 +8,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class Cinema {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+public class Cinema extends BasedEntity {
+
     private String name;
     private String sponsoredName;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Location location;
 }

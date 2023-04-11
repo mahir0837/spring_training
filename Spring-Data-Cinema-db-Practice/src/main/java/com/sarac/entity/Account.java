@@ -1,23 +1,27 @@
 package com.sarac.entity;
 
+import com.sarac.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.math.BigDecimal;
+
 
 
 @Entity
 @Data
 @NoArgsConstructor
-public class Location extends BasedEntity {
+@Table(name = "account_details")
+public class Account extends BasedEntity {
 
     private String name;
-    private BigDecimal latitude;
-    private BigDecimal longitude;
+    private String address;
     private String country;
     private String city;
     private String state;
+    private Integer age;
     private String postalCode;
-    private String address;
-
+    @Enumerated(EnumType.STRING)
+    private Role role;
+    @OneToOne(mappedBy = "accountDetails")
+    private User user;
 }
