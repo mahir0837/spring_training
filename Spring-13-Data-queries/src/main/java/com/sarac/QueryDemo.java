@@ -45,5 +45,11 @@ public class QueryDemo implements CommandLineRunner {
         System.out.println("findByDivisionEndingWith: "+departmentRepository.findByDivisionEndingWith("ics"));
 
         System.out.println("findDistinctTopByDivisionContains: "+departmentRepository.findDistinctTop3ByDivisionContains("Hea"));
+
+        System.out.println("-------------EMPLOYEE-------------");
+
+        System.out.println(employeeRepository.retrieveEmployeeDetail());
+
+
     }
 }
