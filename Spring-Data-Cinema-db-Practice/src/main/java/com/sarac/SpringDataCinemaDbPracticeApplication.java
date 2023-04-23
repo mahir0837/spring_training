@@ -15,10 +15,10 @@ public class SpringDataCinemaDbPracticeApplication {
         SpringApplication.run(SpringDataCinemaDbPracticeApplication.class, args);
     }
 
-    @Bean
-    public MigrateResult migrateResult(DataSource dataSource){
-
-        return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
-    }
+//    @Bean
+//    public MigrateResult migrateResult(DataSource dataSource){
+//
+//        return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
+//    }
 
 }
