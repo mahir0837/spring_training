@@ -1,6 +1,5 @@
 package com.sarac.enums;
 
-public enum State {
-
+public enum MovieState {
     ACTIVE,DRAFT,SUSPENDED
 }

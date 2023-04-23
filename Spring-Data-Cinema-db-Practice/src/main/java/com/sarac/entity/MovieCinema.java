@@ -1,20 +1,34 @@
 package com.sarac.entity;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.ManyToOne;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import java.time.LocalDate;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "MovieCinema")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
-public class MovieCinema extends BasedEntity{
+public class MovieCinema extends BaseEntity {
 
     @Column(columnDefinition = "TIMESTAMP")
-    private LocalDate date_time;
+    private LocalDateTime dateTime;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private Movie movie;
     @ManyToOne(fetch = FetchType.LAZY)
     private Cinema cinema;
+
+    @Override
+    public String toString() {
+        return "MovieCinema{" +
+                "dateTime=" + dateTime +
+                '}';
+    }
+
 }

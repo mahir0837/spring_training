@@ -1,27 +1,25 @@
 package com.sarac.entity;
 
-import com.sarac.enums.Role;
+import com.sarac.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-
 
 @Entity
 @Data
 @NoArgsConstructor
 @Table(name = "account_details")
-public class Account extends BasedEntity {
+public class Account extends BaseEntity {
 
     private String name;
     private String address;
     private String country;
-    private String city;
     private String state;
+    private String city;
     private Integer age;
     private String postalCode;
     @Enumerated(EnumType.STRING)
-    private Role role;
-    @OneToOne(mappedBy = "accountDetails")
+    private UserRole role;
+    @OneToOne(mappedBy = "account")
     private User user;
 }

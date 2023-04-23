@@ -1,6 +1,5 @@
 package com.sarac.enums;
 
-public enum Type {
-
+public enum MovieType {
     PREMIER,REGULAR
 }
