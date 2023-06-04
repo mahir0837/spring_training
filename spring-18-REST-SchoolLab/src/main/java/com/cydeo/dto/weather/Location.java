@@ -1,7 +1,5 @@
 
-package com.cydeo.dto.weather
-
-/.dto.weather;
+package com.cydeo.dto.weather;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
